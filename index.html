@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<title>TESTANDO</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Aula JS 2</title>
 </head>
 <body>
-	<div class="tres">SOCORRO</div>
-	<div class="um">ME</div>
-	<div class="dois">MATE</div>
 
-			
-		
+  <h1>Venda de Insumos</h1>
+
+  <form action="">
+    <label for="insumo">Escolha seu insumo:</label>
+    <select name="insumotipo" id="insumo">
+      <option value="manga">Manga</option>
+      <option value="laranja">Laranja</option>
+      <option value="ypioca">Ypioca</option>
+      <option value="gelo">Gelo</option>
+    </select>
+    <br><br>
+    <label for="quantidade">Quantidade:</label>
+    <input type="number" name="insumoquantidade" id="quantidade">
+    <br><br>
+    <label for="unidade">Escolha a unidade:</label>
+    <select name="insumounidade" id="unidade">
+      <option value="unidade">Unidade</option>
+      <option value="gramas">Gramas</option>
+      <option value="quilogramas">Quilogramas</option>
+      <option value="litros">Litros</option>
+    </select>
+    <br><br>
+    <input type="button" name="botao" value="Comprar" onclick="cPreco()">
+  </form>
+
+  <p>Preço: R$<span id="preco"></span></p>
+
+  <script src="js/myScript.js"></script>
 </body>
 </html>
