@@ -1,0 +1,36 @@
+body{
+	background-color: darkgrey;
+	margin-top: 0;
+}
+
+div{
+	width: 100px;
+	height: 250px;
+	padding: 20px;
+	margin: 20px; 
+}
+div.um {
+	position: static;
+	top: 50%;
+	left: 45%;
+	width: 300px;
+	height: 300px;
+	background-color: lightblue;
+}
+
+div.dois {
+	position: relative;
+	top: 15%;
+	left: 10%;
+	width: 100px;
+	height: 80px;
+	background-color: lightpink;
+}
+
+div.tres {
+	position: sticky;
+	top: 0;
+	background-color: lightgreen;
+	width: 101px;
+	height: 40px;
+}
